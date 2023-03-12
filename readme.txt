@@ -10,3 +10,13 @@ Filter invoices by status (draft/pending/paid)
 Toggle light and dark mode
 Keep track of any changes, even after refreshing the browser (localStorage could be used for this if you're not building out a full-stack app)
 Add login page with authentication
+
+## How to run the app
+
+<ul>
+<li> Create a ".env" file that will hold your "PORT" number and "MongoDB connection" string </li>
+<li> Make a database in mongoDB. Copy the connection string to paste in the ".env" file </li>
+<li> Type in "npm install" to download all the packages and dependecies in the package.json file</li>
+</ul>
+
+* Run the app with 'npm start"
