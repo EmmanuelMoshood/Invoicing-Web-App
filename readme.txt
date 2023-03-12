@@ -16,6 +16,7 @@ Add login page with authentication
 <ul>
 <li> Create a ".env" file that will hold your "PORT" number and "MongoDB connection" string </li>
 <li> Make a database in mongoDB. Copy the connection string to paste in the ".env" file </li>
+<li> Add your .env file name to your gitignore file along with your node_modules folder name</li>
 <li> Type in "npm install" to download all the packages and dependecies in the package.json file</li>
 </ul>
 
