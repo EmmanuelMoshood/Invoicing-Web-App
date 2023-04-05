@@ -86,5 +86,5 @@ app.use("/invoices", invoiceRoutes);
 // todo - Start Server
 app.listen(process.env.PORT, () => {
 // app.listen(PORT, () => {
-  console.log("Server is running, you better catch it!");
+  console.log(`Server is running on port ${process.env.PORT}, you better catch it!`);
 });
