@@ -19,7 +19,7 @@ import flash from "express-flash";
 import logger from "morgan";
 // Connecting the routes to their appropriate files
 import homeRoutes from "./routes/home.js";
-// import invoiceRoutes from "./routes/invoices.js";
+import invoiceRoutes from "./routes/invoices.js";
 
 
 //* Import functions/routes
@@ -78,7 +78,7 @@ app.use(flash());
 // todo - Set Routes
 //Setup routes for which the server is listening on
 app.use("/", homeRoutes);
-// app.use("/invoices", invoiceRoutes);
+app.use("/invoices", invoiceRoutes);
 
 
 
@@ -86,5 +86,5 @@ app.use("/", homeRoutes);
 // todo - Start Server
 app.listen(process.env.PORT, () => {
 // app.listen(PORT, () => {
-  console.log("Server is running, you better catch it!");
+  console.log(`Server is running on port ${process.env.PORT}, you better catch it!`);
 });
